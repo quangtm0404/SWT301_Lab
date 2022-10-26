@@ -23,106 +23,106 @@ public class UnitTestDayInMonth {
     
   
     
-    @Ignore
+   
     @Test 
     public void shoudReturn29() {
         int result = DateUtils.dayInMonth(2, 2020);
         assertEquals(29, result);
     }
-    @Ignore
+    
     @Test 
     public void shoudReturn28() {
         int result = DateUtils.dayInMonth(2, 2023);
         assertEquals(28, result);
     }
-    @Ignore
+   
     @Test 
     public void boundaryShouldReturn30() {
         int expected = 30;
         int result = DateUtils.dayInMonth(4, 1000);
         assertEquals(expected, result);
     }
-    @Ignore
+  
      @Test 
     public void boundary3000ShouldReturn30() {
         int expected = 30;
         int result = DateUtils.dayInMonth(4, 3000);
         assertEquals(expected, result);
     }
-    @Ignore
+    
     @Test 
     public void normal04ShouldReturn30() {
         int result = DateUtils.dayInMonth(4, 2020);
         assertEquals(30, result);
     }
-    @Ignore
+    
     @Test 
     public void normal09ShouldReturn30() {
         int result = DateUtils.dayInMonth(9, 2020);
         assertEquals(30, result);
     }
-    @Ignore
+    
     @Test 
     public void normal06ShouldReturn30() {
         int result = DateUtils.dayInMonth(6, 2020);
         assertEquals(30, result);
     }
-    @Ignore
+    
     @Test 
     public void normal11ShouldReturn30() {
         int result = DateUtils.dayInMonth(11, 2020);
         assertEquals(30, result);
     }
-    @Ignore
+    
     @Test 
     public void should01Return31() {
         int result = DateUtils.dayInMonth(1, 2020);
         assertEquals(31, result);
     }
-     @Ignore
+     
     @Test 
     public void should03Return31() {
         int result = DateUtils.dayInMonth(3, 2020);
         assertEquals(31, result);
     }
-     @Ignore
+     
     @Test 
     public void should05Return31() {
         int result = DateUtils.dayInMonth(5, 2020);
         assertEquals(31, result);
     }
-     @Ignore
+     
     @Test 
     public void should07Return31() {
         int result = DateUtils.dayInMonth(7, 2020);
         assertEquals(31, result);
     }
-    @Ignore
+    
     @Test 
     public void should08Return31() {
         int result = DateUtils.dayInMonth(8, 2020);
         assertEquals(31, result);
     }
-     @Ignore
+     
     @Test 
     public void should10Return31() {
         int result = DateUtils.dayInMonth(10, 2020);
         assertEquals(31, result);
     }
-     @Ignore
+     
     @Test 
     public void should12Return31() {
         int result = DateUtils.dayInMonth(12, 2020);
         assertEquals(31, result);
     }
-    @Ignore
+    
     @Test 
     public void boundary1000ShouldReturn31() {
         int expected = 31;
         int result = DateUtils.dayInMonth(1, 1000);
         assertEquals(expected, result);
     }
-    @Ignore
+    
     @Test 
     public void boundary3000ShouldReturn31() {
         int expected = 31;
@@ -130,7 +130,7 @@ public class UnitTestDayInMonth {
         assertEquals(expected, result);
     }
     
-    @Ignore
+    
     @Test 
     public void year999shouldReturn0() {
         int expected = 0;     
@@ -138,21 +138,21 @@ public class UnitTestDayInMonth {
         assertEquals(expected, result);
 
     }
-    @Ignore
+    
     @Test 
     public void year3001ShouldReturn0() {
         int expected = 0;
         int result = DateUtils.dayInMonth(1, 3001);
         assertEquals(expected, result);
     }
-    @Ignore
+    
     @Test
     public void yearNullShoudReturn0() {
         int expected = 0;
         int result = DateUtils.dayInMonth(1, null);
         assertEquals(expected, result);
     }
-    @Ignore
+    
     @Test
     public void monthNullShouldReturn0() {
         int expected = 0;

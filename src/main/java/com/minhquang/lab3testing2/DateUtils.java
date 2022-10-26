@@ -18,7 +18,7 @@ public class DateUtils {
 //        if (month > 12 || month < 1 || year > 3000 || year < 1000) {
 //            return result;
 //        }
-        if (month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+        if ( month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
             result = 31;
         } else if (month == 4 || month == 6 || month == 9 || month == 11) {
             result = 30;
@@ -40,7 +40,7 @@ public class DateUtils {
         boolean check = false;
         if (year != null && month != null && day != null) {
             int maxDay = dayInMonth(month, year);
-            if ( year >= 500 && year <= 1000) {
+            if ( year >= 1000 && year <= 3000) {
 
                 if (day > 0 && day <= maxDay) {
                     check = true;

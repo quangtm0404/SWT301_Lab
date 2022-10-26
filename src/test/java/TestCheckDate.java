@@ -6,6 +6,7 @@
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.*;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import java.nio.file.Paths;
 import java.util.*;
 import org.junit.Test;
 import org.junit.Ignore;
@@ -79,5 +80,19 @@ public class TestCheckDate {
             e.printStackTrace();
         }
     }
+    @Ignore
+    @Test
+    public void secondTestMethod() {
+        try ( Playwright playwright = Playwright.create()) {
+            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(5000));
+            Page page = browser.newPage();
+            page.navigate("http://localhost:8080/Lab3Testing2/");
+            page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("example.png")));
+            System.out.println(page.title());
+
+        }
+    }
+    
+    
 
 }

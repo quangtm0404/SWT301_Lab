@@ -1,0 +1,1 @@
+mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="codegen http://localhost:8080/Lab3Testing2/"
